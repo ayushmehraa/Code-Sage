@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- importing font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <title>CS!</title>
+    <style>
+        body {
+            /* background-image: linear-gradient(40deg,rgb(238, 237, 246), rgb(245, 72, 208)); */
+            /* background-image: linear-gradient(rgb(250, 253, 250), rgb(75, 72, 245),white); */
+            background-image: linear-gradient(white);
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
+
+        /* navbar */
+
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 1.5rem;
+            padding-bottom: 0.3em;
+            ;
+            padding-top: 0.3em;
+            ;
+            padding-left: 1.5rem;
+        }
+
+        .navbtn {
+
+            border-bottom: 4px solid blue;
+            border-radius: 33px;
+        }
+
+        .navbtn:hover {
+            background-color: rgba(41, 41, 223, 0.787);
+            border-bottom: 4px solid rgb(75, 72, 245);
+            /* border-radius: 0px; */
+            color: white;
+
+        }
+
+
+        /* Sigup/in butten */
+        .btnedit {
+            padding-right: 1.5rem;
+            padding-bottom: 0.3em;
+            ;
+            padding-top: 0.3em;
+            ;
+            padding-left: 1.5rem;
+            color: blue;
+            border: 4px solid blue;
+            /* border-radius: 33px; */
+        }
+
+        .btnedit:hover {
+            background-color: rgba(41, 41, 223, 0.787);
+            border-bottom: 4px solid rgb(75, 72, 245);
+            /* border-radius: 0px; */
+            color: white;
+
+        }
+
+        /*phone navbar navbar-toggler */
+
+
+        .navbar-toggler {
+            /* padding: ; */
+            /* margin: 0px; */
+            padding: .75rem 1rem .75rem 1rem;
+            font-size: 1.5rem;
+            line-height: 1;
+            background-color: blue;
+            border: 1px solid transparent;
+            border-radius: 33px;
+            transition: box-shadow .15s ease-in-out;
+            font-size: medium;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        /* search button */
+        .srchbtn {
+            color: blue;
+            border: 3px solid blue;
+        }
+
+        .srchbtn:hover {
+            color: blue;
+            border: 3px solid blue;
+            /* background-color: rgb(109, 109, 241); */
+        }
+
+        .heading-sec {
+            font-weight: bolder;
+            text-decoration: underline;
+
+        }
+
+        .heading-thrd {
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        .para {
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+
+        .imgedit {
+            margin: auto;
+            width: 700px;
+            height: 500px;
+            margin-top: 14px;
+            margin-bottom: 14px;
+            align-items: center;
+        }
+
+        /* IMAGE media query (fop setting its responsivnes) */
+
+        @media(max-width:769px) {
+            .imgedit {
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+        /* footer */
+        footer {
+            color: wheat;
+            width: 100%;
+            /* height: 40px; */
+            background-color: black;
+        }
+
+        .cnt-btn {
+            margin: 13px;
+            border: 4px solid blue;
+            border-radius: 33px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .cnt-btn:hover {
+            color: aliceblue;
+            background-color: blue;
+        }
+
+        .start {
+            display: flex;
+        }
+
+        .content {
+            width: 200px;
+            height: 100%;
+        }
+
+        .cntnt-lst a {
+            text-decoration: none;
+            color: rgb(53, 52, 52);
+            font-weight: bold;
+        }
+
+        .cntnt-lst a:hover {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+
+        }
+
+        .cnt-heading {
+            margin: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* .his-img{
+      
+      
+      width: 1000px;
+      height: 400px;
+     
+    }*/
+        @media (max-width:1020px) {
+            .content {
+                display: none;
+            }
+        }
+
+        /* next and previous */
+        .nxt {
+            display: block;
+            margin: auto;
+            width: 10px;
+        }
+
+        ::selection {
+            /* background-color: #c61e2f; */
+            /* background-color: rgb(245, 229, 0); */
+            background-color: blue;
+            color: #fff;
+            /* color: rgb(17, 0, 255); */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <h1><a style="font-weight: bold;" class="navbar-brand" href="#">Code Sage</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="">menu</span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+                    <li class="nav-item mx-2  ">
+                        <a class="nav-link activee navbtn" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navbtn" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbtn" href="Contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle navbtn" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu mx-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="C_language.html">C Language</a></li>
+                            <li><a class="dropdown-item" href="#">Data Science(coming soon)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">How to start?(coming soon)</a></li>
+                            <li><a class="dropdown-item" href="#">Support(coming soon)</a></li>
+                            <li><a class="dropdown-item" href="#">Write For Us(coming soon)</a></li>
+                        </ul>
+                        <!-- </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn srchbtn" type="submit">Search</button>
+                </form>
+                <!-- signup and singin later backend -->
+                <!-- <div class="mx-4">
+          <button type="button" class=" btn btnedit" data-bs-toggle="modal" data-bs-target="#loginModal" btn
+            btn-outline-danger>Login</button>
+          <button type="button" class=" btn btnedit" data-bs-toggle="modal" data-bs-target="#SigninModal" btn
+            btn-outline-danger>Signup</button>
+        </div> -->
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- START HERE -->
+    <div class="start">
+
+
+        <div class="content">
+            <!-- CONTENT  -->
+            <div class="cnt-heading">C Programming Tutorial </div>
+            <hr>
+            <ol>
+                <li class="cntnt-lst "><a href="C_language.html">History and Environment setup</a></li>
+                <li class="cntnt-lst "><a href="C_page_2.html">Writing our first program</a></li>
+                <!-- <li><a href=""></a></li>
+      <li><a href=""></a></li> -->
+            </ol>
+        </div>
+
+        <!-- table mobile content -->
+
+        <div class="container">
+            <h1 style="width: 200px; margin: auto; border-bottom: 4px solid black; text-align: center;"> C Tutorial</h1>
+
+            <!-- <div >
+        <img class="his-img " src="slider1.jpg" alt="">
+      </div><hr style="height: 4px; ;">
+       -->
+
+
+       
+
+
+
+        
+    </div>
+
+
+
+    <!-- Sidebar -->
+
+
+    <!-- Next and previous -->
+    <!-- <div class="contanier nxt">
+        <a href="http://">Next</a>
+
+    </div>
+
+
+    <footer>
+        <p class="float-end"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="20"
+                    height="20" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                </svg></a></p>
+        <p>© 2021–2022 Code sage,Inc Privacy Terms </p>
+    </footer> -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
